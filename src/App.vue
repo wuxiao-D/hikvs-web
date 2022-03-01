@@ -2,29 +2,6 @@
   <div id="app">
     <hik-comp style="width: 200px; height: 90px;" :playConfig="playConfig" v-for="item in jkInfo" :key="item.nameId" :nameId="item.nameId"
       :cameraIndexCode="item.cameraIndexCode" />
-
-      第一部分：创建vue2项目
-        看自己需要哪些，本次只使用了babel。
-      第二部分：精简代码
-        1、将components文件夹下的helloworld删掉，新建一个自己需要的.vue文件
-        2、在App.vue中，去掉多余的内容，引入组件
-
-      第三部分：官网账号，
-        1、先到官网注册一下：https://www.npmjs.com/signup
-        2、在终端中登陆：
-          输入： npm login
-          按提示输入Username、Password、Email
-          按邮箱里的验证码输入确认一下
-        3、如果使用了cnpm镜像，需要切换到官方的： npm config set registry https://registry.npmjs.org //set https origin
-      第四部分：发布
-         1、在项目的package.json文件中，script中添加  "install": "vue-cli-service build --target lib ./src/hikvs/index.js --name plug --dest dist-plug"
-         2、终端输入： npm run install， 成功了会生产dist-plug
-         3、进入到dist-plug目录下，新建package.json 和README.md
-         4、输入：npm publish
-         4、成功后，会收到邮件，并且到个人package中会有
-
-git@github.com:wuxiao-D/hikvs-web.git
-      
   </div>
 </template>
 
@@ -38,7 +15,7 @@ export default {
       jkInfo: [
         {
           nameId: "playWnd1", // nameId 具有唯一性，否则无效
-          cameraIndexCode: "xxxxxxxx",  // 监控点编号
+          cameraIndexCode: "xxxxxx",  // 监控点编号
         }
       ],
     };
@@ -51,7 +28,7 @@ export default {
         secret: "xxxxxxxxxxxxxxxxxxxx",                   // 【必填】 综合安防管理平台（API网关）提供的secret
         ip: "xxxxxxxxxxx",                                // 【必填】 综合安防管理平台（API网关）IP地址
         playMode: 0,                                      // 初始播放模式，（决定显示预览还是回放界面）：0-预览，1-回放
-        port: 444,                                        // 综合安防管理平台（API网关）端口，若启用HTTPS协议，默认443
+        port: 443,                                        // 综合安防管理平台（API网关）端口，若启用HTTPS协议，默认443
         snapDir: "D:\\SnapDir",                           // 抓图存储路径
         videoDir: "D:\\VideoDir",                         // 紧急录像或录像剪辑存储路径
         layout: "1x1",                                    // playMode指定模式的布局

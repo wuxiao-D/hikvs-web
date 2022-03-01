@@ -3,7 +3,6 @@ import App from './App.vue'
 
 Vue.config.productionTip = false
 
-
 import hikComp from 'hikvs-web'
 Vue.use(hikComp)
 
