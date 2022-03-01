@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "install": "vue-cli-service build --target lib ./src/hikvs/index.js --name hikvs --dest dist-hikvs"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "hikvs-web": "^1.0.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
