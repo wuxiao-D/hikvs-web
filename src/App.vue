@@ -38,24 +38,8 @@ export default {
       jkInfo: [
         {
           nameId: "playWnd1", // nameId 具有唯一性，否则无效
-          cameraIndexCode: "2289a43f1c054fbd8228f9f548bb9a03",  // 监控点编号
-        },
-        {
-          nameId: "playWnd2",
-          cameraIndexCode: "ded3ef6666b04eab90d666519d1e94fd",   // 监控点编号
-        },
-        {
-          nameId: "playWnd3",
-          cameraIndexCode: "98f12d8986324f729678e82f1e17e3a9",   // 监控点编号
-        },
-        {
-          nameId: "playWnd4",
-          cameraIndexCode: "40a2053615ff459f9be79a683ed98826",   // 监控点编号
-        },
-        {
-          nameId: "playWnd5",
-          cameraIndexCode: "7f3e0ed2db144fc99b60d5ce0afccd8e",   // 监控点编号
-        },
+          cameraIndexCode: "xxxxxxxx",  // 监控点编号
+        }
       ],
     };
   },
@@ -63,9 +47,9 @@ export default {
     /** start 海康视频WEB插件，请自行修改以下配置项 */
     playConfig: function () {
       return {
-        appkey: "23209819",                               // 【必填】 综合安防管理平台（API网关）提供的appkey
-        secret: "PxNzZ4a5qZaFxo8ymh7A",                   // 【必填】 综合安防管理平台（API网关）提供的secret
-        ip: "112.2.52.61",                                // 【必填】 综合安防管理平台（API网关）IP地址
+        appkey: "xxxxxxxx",                               // 【必填】 综合安防管理平台（API网关）提供的appkey
+        secret: "xxxxxxxxxxxxxxxxxxxx",                   // 【必填】 综合安防管理平台（API网关）提供的secret
+        ip: "xxxxxxxxxxx",                                // 【必填】 综合安防管理平台（API网关）IP地址
         playMode: 0,                                      // 初始播放模式，（决定显示预览还是回放界面）：0-预览，1-回放
         port: 444,                                        // 综合安防管理平台（API网关）端口，若启用HTTPS协议，默认443
         snapDir: "D:\\SnapDir",                           // 抓图存储路径
