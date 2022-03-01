@@ -1,4 +1,3 @@
-# plug-demo
 
 ## Project setup
 ```
