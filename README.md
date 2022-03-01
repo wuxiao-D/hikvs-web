@@ -5,13 +5,14 @@
 npm install
 ```
 
-## use
-​```js
+## use 
+```js
+
 // main.js
 import hikComp from 'hikvs-web'
 Vue.use(hikComp)
 
-​```
+```
 ## config
 * 必须给播放器容器设置宽高
 * 还有以下几个参数必传项：
