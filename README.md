@@ -6,7 +6,7 @@ npm install
 ```
 
 ## use
-​```
+​```js
 // main.js
 import hikComp from 'hikvs-web'
 Vue.use(hikComp)
